@@ -1,0 +1,38 @@
+Claims:
+The invention claimed is:
+
+1. An addressing circuit for a memory core, comprising: a generator to store a previous address and receive a current address, the the generator to provide a number of pulses corresponding to a difference between the current address and the previous address; and a series of decoders to provide wordlines to a memory core, wherein outputs of the series of decoders activate wordlines in sequence according to the number of pulses.
+
+2. The addressing circuit of claim 1 wherein the series of decoders receive a stream of pulses from the generator and a wordline signal to gate the generation of the wordlines.
+
+3. The addressing circuit of claim 1 wherein the series of decoders are connected to form a shift register.
+
+4. The addressing circuit of claim 1 wherein the series of decoders receive a reset signal.
+
+5. The addressing circuit of claim 1 wherein the generator includes a statemachine to store the previous address, receive the current address and generate the number of pulses.
+
+6. An addressing circuit for a memory core comprising: multiple array decoders to shift a logic one through a field of logic zeros wherein outputs of the multiple array decoders are coupled to the memory core; and a pulse generator coupled to receive a present address and control clock pulses to the multiple array decoders.
+
+7. The addressing circuit of claim 6 wherein the pulse generator compares a previous address to the present address, then generates an appropriate number of the clock pulses to increment the previous address to the present address.
+
+8. The addressing circuit of claim 6 wherein the pulse generator compares a previous address to the present address to determine a difference value and provide the clock pulses in accordance with the difference value.
+
+9. The addressing circuit of claim 6 wherein the pulse generator monitors the clock pulses received by the multiple array decoders and limits the clock pulses to correspond to a difference value between the previous address and the present address.
+
+10. The addressing circuit of claim 6 wherein the outputs of the multiple array decoders are coupled to wordlines of the memory core.
+
+11. The addressing circuit of claim 6 wherein the outputs of the multiple array decoders are coupled to column select lines of the memory core.
+
+12. A wireless system, comprising: first and second antennas; a transceiver coupled to the first and second antennas; and a processor coupled to the transceiver, wherein the processor includes, a memory, multiple decoders coupled to the memory to provide access to data within the memory, the multiple decoders arranged as a shift register, and a generator to store a previous address and receive a current address and provide a number of pulses corresponding to a difference between the current address and the previous address to clock the shift register.
+
+13. The wireless system of claim 12, wherein outputs of the multiple decoders are coupled to wordlines of the memory.
+
+14. The wireless system of claim 12, wherein outputs of the multiple decoders are coupled to column select lines of the memory.
+
+15. The wireless system of claim 12, wherein the memory is accessed using sequential addressing.
+
+16. A method comprising: receiving a current address in a memory providing clock pulses to a shift register that is reset during a power-on reset, wherein the clock pulses are limited by a difference in number of addresses from the current address to a previous address; using the clock pulses to shift a logic one in a field of zeros in the shift register; and using outputs of the shift register to drive wordlines and access data in the memory.
+
+17. The method of claim 16, further comprising: using outputs of the shift register to drive column select lines of the memory.
+
+18. The method of claim 16 further including: using sequential addressing to access the memory.
