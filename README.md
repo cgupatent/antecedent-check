@@ -2,6 +2,8 @@
 patent claim antecedent basis checking program, using Java based OpenNLP tool set and Python main program
 
 ** need to install latest Java and python
+** need to download large model file:  http://opennlp.sourceforge.net/models-1.5/en-parser-chunking.bin, do not uncompress
+
 need to have claim set 2.txt as input file with claim text
 
 run antecedent.py
